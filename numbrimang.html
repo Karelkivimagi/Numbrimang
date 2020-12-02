@@ -5,12 +5,15 @@
 <body> 
 <p>1 - 25</p> 
 <div class="form"> 
+     // Field
     <label for="guessField">Arva: </label> 
     <input type = "text" id = "guessField" class = "guessField"> 
     <input type = "submit" value = "Submit" 
            class = "guessSubmit" id = "submitguess"> 
 </div> 
 <script type = "text/javascript"> 
+    
+    // Random value generated
     var y = Math.floor(Math.random() * 25 + 1); 
     var guess = 1; 
     document.getElementById("submitguess").onclick = function(){ 
